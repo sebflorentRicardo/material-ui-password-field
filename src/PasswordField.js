@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react'
 import TextField from 'material-ui/TextField'
 import IconButton from 'material-ui/IconButton'
-import Visibility from 'material-ui/svg-icons/action/visibility'
-import VisibilityOff from 'material-ui/svg-icons/action/visibility-off'
+import Visibility from 'material-ui/svg-icons/action/visibility-off'
+import VisibilityOff from 'material-ui/svg-icons/action/visibility'
 import transitions from 'material-ui/styles/transitions'
 import {fade} from 'material-ui/utils/colorManipulator'
 
@@ -63,7 +63,7 @@ class PasswordField extends React.Component {
   static contextTypes = {
     muiTheme: PropTypes.object.isRequired,
   }
-  
+
   constructor (props) {
     super(props)
     this.state = {
@@ -116,7 +116,7 @@ class PasswordField extends React.Component {
     const {
       visible
     } = this.state
-    
+
     const styles = getStyles(this.props, this.context, this.state)
 
     const { prepareStyles } = this.context.muiTheme
